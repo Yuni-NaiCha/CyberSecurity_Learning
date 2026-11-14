@@ -15,7 +15,7 @@
 - （计算机网络微课堂：网络的概念，计算机网络性能指标体系结构）
 - [03-Linux网络命令实操](01_Notes/03-Linux网络命令实操.md)
 - （ip a,ping,ping -c 5,traceroute,nslookup,curl -v,cat /etc/reslov.conf,Systemctl status NetworkManager）
-- [04-虚拟机网络配置](01_Notes\04-虚拟机网络配置.md)
+- [04-虚拟机网络配置](01_Notes/04-虚拟机网络配置.md)
 - (VirtualBox由NAT改桥接网络，获取双端IP，解决防火墙拦截问题并互ping成功记录,保护User与IP已做脱敏处理)
 ### 法规与合规
 - [05-网络安全法规与合规笔记](01_Notes/05-网络安全法规与合规笔记.md)
