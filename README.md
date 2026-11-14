@@ -1,0 +1,25 @@
+# 网络安全转行学习记录 (Yuni_NaiCha)
+
+这是一个从0到1转行网络安全（安全运营/合规方向）的学习仓库。包含环境搭建、网络基础、Linux实操、合规笔记及靶场复现。
+(在这里特别感谢DeepSeek老师对我的细心指导和耐心帮助！)
+
+## 📚 学习笔记目录
+
+### 基础与工具
+- [00-环境下载与安装清单](01_Notes/00-环境下载进度.md)
+- (虚拟机（VirtualBox）、Linux系统（Ubuntu 22.04）和代码编辑器（VS Code） 管理工具Git)
+- [01-虚拟机安装记录](01_Notes/01-虚拟机安装记录Linux.md)
+- （将ISO安装到虚拟机平台VirtualBox内）
+### 计算机网络
+- [02-计算机网络基础笔记](01_Notes/02-计算机网络基础笔记.md)
+- （计算机网络微课堂：网络的概念，计算机网络性能指标体系结构）
+- [03-Linux网络命令实操](01_Notes/03-Linux网络命令实操.md)
+- （ip a,ping,ping -c 5,traceroute,nslookup,curl -v,cat /etc/reslov.conf,Systemctl status NetworkManager）
+- [04-虚拟机网络配置](01_Notes\04-虚拟机网络配置.md)
+- (VirtualBox由NAT改桥接网络，获取双端IP，解决防火墙拦截问题并互ping成功记录,保护User与IP已做脱敏处理)
+### 法规与合规
+- [05-网络安全法规与合规笔记](01_Notes/05-网络安全法规与合规笔记.md)
+- （总论，核心制度，监测预警与应急处置，⚠️ 从业者红线）
+
+---
+*持续更新中，目标：拿下安全运营/合规 Offer！*
