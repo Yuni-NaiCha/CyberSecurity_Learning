@@ -11,9 +11,9 @@
 - [01-虚拟机安装记录](01_Notes/01-虚拟机安装记录Linux.md)
 - （将ISO安装到虚拟机平台VirtualBox内）
 ### 计算机网络
-- [02-计算机网络基础笔记](01_Notes/02-计算机网络基础笔记.md)
+- [02-计算机网络概念与体系结构笔记](01_Notes/02-计算机网络概念与体系结构笔记.md)
 - （计算机网络微课堂：网络的概念，计算机网络性能指标，计算机网络体系结构）
-- [07-IPMA地址与ARP地址解析协议笔记.md](01_Notes/07-IPMAC地址与ARP地址解析协议笔记.md)
+- [07-IPMA地址与ARP地址解析协议笔记](01_Notes/07-IPMAC地址与ARP地址解析协议笔记.md)
 - (IP地址，MAC地址，ARP地址解析协议)
 - [03-Linux网络命令实操](01_Notes/03-Linux网络命令实操.md)
 - （ip a,ping,ping -c 5,traceroute,nslookup,curl -v,cat /etc/reslov.conf,Systemctl status NetworkManager）
