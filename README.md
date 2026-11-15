@@ -13,17 +13,17 @@
 ### 计算机网络
 - [02-计算机网络概念与体系结构笔记](01_Notes/02-计算机网络概念与体系结构笔记.md)
 - （计算机网络微课堂：网络的概念，计算机网络性能指标，计算机网络体系结构）
-- [07-IPMA地址与ARP地址解析协议笔记](01_Notes/07-IPMAC地址与ARP地址解析协议笔记.md)
+- [03-IPMAC地址与ARP地址解析协议笔记](01_Notes/03-IPMAC地址与ARP地址解析协议笔记.md)
 - (IP地址，MAC地址，ARP地址解析协议)
-- [03-Linux网络命令实操](01_Notes/03-Linux网络命令实操.md)
-- （ip a,ping,ping -c 5,traceroute,nslookup,curl -v,cat /etc/reslov.conf,Systemctl status NetworkManager）
-- [04-虚拟机网络配置](01_Notes/04-虚拟机网络配置.md)
+- [04-Linux网络命令实操](01_Notes/04-Linux网络命令实操.md)
+- （ip a,ping,ping -c 5,traceroute,nslookup,curl -v,cat /etc/resolv.conf,Systemctl status NetworkManager）
+- [05-虚拟机网络配置](01_Notes/05-虚拟机网络配置.md)
 - (VirtualBox由NAT改桥接网络，获取双端IP，解决防火墙拦截问题并互ping成功记录,保护User与IP已做脱敏处理)
 ### 法规与合规
-- [05-网络安全法规与合规笔记](01_Notes/05-网络安全法规与合规笔记.md)
+- [06-网络安全法规与合规笔记](01_Notes/06-网络安全法规与合规笔记.md)
 - （总论，核心制度，监测预警与应急处置，⚠️ 从业者红线）
 ### 定期复盘与总结
-- [第一周00-05复盘与总结](01_Notes/06-第一周复盘与总结.md)
+- [第一周00-05复盘与总结](01_Notes/07-第一周复盘与总结.md)
 - (第1周学习流程回顾，注意事项，隐私保护准则以及下周目标)
 ---
 *持续更新中，目标：拿下安全运营/合规 Offer！*

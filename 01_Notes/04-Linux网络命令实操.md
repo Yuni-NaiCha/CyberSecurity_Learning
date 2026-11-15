@@ -5,7 +5,7 @@
 - **干嘛用**：出门先看自己家门牌号。主要看 `enp0s3` 这块网卡。
 - **看什么**：`link/ether` 是网卡身份证（MAC地址）；`inet 10.0.2.15/24` 是我的内网 IP；`brd 10.0.2.255` 是广播地址。
 ![ip a](images/ip_a.png)
-- **图片路径里不能有空格
+- **图片路径里不能有空格**
 
 ## 2. 测试域名通不通：`ping baidu.com`
 - **干嘛用**：测试自己能不能连外网，顺便看看 DNS 解析正不正常。
@@ -24,7 +24,7 @@
 - **现象**：第一跳是 `10.0.2.2`（虚拟机网关）。**但是第 2 跳之后全是 `* * *`**。
 - **原因**：不是断网了！是运营商的路由器开了防探测，把包丢了；加上虚拟机现在是 NAT 模式，外面的路由找不到回来的路。在网安里，扫不出别人信息是很正常的。
 - *（如果提示找不到命令，先用 `sudo apt install traceroute -y` 装一下）*
-![traceoute失败](images/false_traceoute.png)
+![traceroute失败](images/false_traceroute.png)
 ![安装必要组件](images/install.png)
 ![traceroute www.qq.com.png](images/traceroute_www.qq.com.png)
 
