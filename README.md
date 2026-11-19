@@ -27,7 +27,9 @@
 - [12-DNS域名系统理论笔记](01_Notes/12-DNS域名系统理论笔记.md)(附纸质笔记)
   - （DNS层次结构、域名分类、常见域名名称、域名服务器分类、域名解析过程分类、使用UDP53端口）
 - [13-Wireshark双端DNS抓包实操](01_Notes/13-Wireshark双端DNS抓包实操.md)
-  - （学习Wireshark抓包与过滤器语法；分析DNS协议A/AAAA记录报文，理解双端环境下的请求与应答机制。）
+  - （学习Wireshark抓包与过滤器语法；分析DNS协议A/AAAA记录报文，理解双端环境下的请求与应答机制）
+- [14-应用层WWW与HTTP理论笔记](01_Notes/14-应用层WWW与HTTP理论笔记.md)
+  - （应用层概述、网络应用的两种方式、万维网WWW、超文本传输协议HTTP与报文收发解读、Cookie、Web缓存与代理服务器）
 
 ### 🐧 02. Linux 系统与网络命令
 - [04-Linux网络命令实操](01_Notes/04-Linux网络命令实操.md)
