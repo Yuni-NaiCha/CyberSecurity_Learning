@@ -36,6 +36,8 @@
   - （Wireshark 抓包与过滤器语法；DNS 报文逐字段解析：Transaction ID 配对、Flags/QR/RCODE 判读、Answer 区 CNAME 别名链与 A 记录、TTL 设计、Authority/Additional(OPT) 区；含「加密 DNS 导致明文抓不到」的完整排查与防守视角分析）
 - [14-应用层WWW与HTTP理论笔记](01_Notes/14-应用层WWW与HTTP理论笔记.md)(附纸质笔记)
   - （应用层概述、网络应用的两种方式、万维网WWW、超文本传输协议HTTP与报文收发解读、Cookie、Web缓存与代理服务器）
+- [15-IPv4手算子网练习](01_Notes/15-IPv4手算子网练习.md)(附手写答题纸)
+  - （完全纸笔、不用计算器的十道题：地址分类与默认掩码、/24 等分、/20 与 /11 大网段、同网段判断、可用主机数、路由聚合、VLSM 分配；含错题复盘与三条失分规律的自查）
 
 ### 🐧 三、Linux 系统与网络命令
 - [04-Linux网络命令实操](01_Notes/04-Linux网络命令实操.md)
