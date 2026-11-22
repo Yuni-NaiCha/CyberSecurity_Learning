@@ -1,4 +1,4 @@
-# 网络安全转行学习记录 (Yuni_NaiCha)
+# 网络安全转行学习记录 (Yuni-NaiCha)
 
 > **方向**：安全运营（蓝队）· 安全合规
 > **技术栈**：Windows 10 / Ubuntu 22.04（VirtualBox）· TCP/IP 与协议分析 · Wireshark · Git · VS Code · Gpg4win
@@ -85,6 +85,6 @@
 
 ---
 
-© 2026 YuNi_NaiCha. 
+© 2026 Yuni-NaiCha. 
 All rights reserved.
 (禁止抄袭本仓库内容冒充本人经历用于求职面试，禁止未经许可将本项目用于商业用途。)
