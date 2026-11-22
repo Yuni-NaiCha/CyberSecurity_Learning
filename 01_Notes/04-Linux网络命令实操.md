@@ -7,7 +7,7 @@
 - **🎯 总体作用**：出门先看自己家门牌号，确认网卡拿到了什么 IP。主要看 `enp0s3` 这块网卡。
 - **🔧 硬核解析（底层原理）**：
     - `link/ether`：网卡身份证（MAC 地址）。
-    - `inet 10.0.2.15/24`：本机的内网 IP 与掩码长度。
+    - `inet 10.0.2.x/24`：本机的内网 IP 与掩码长度。
     - `brd 10.0.2.255`：广播地址。
 - **💬 大白话翻译**：出门前先低头看一眼自己的门牌号，别连自己住哪都不知道。
 
@@ -43,12 +43,12 @@
 
 - **🎯 总体作用**：看看数据包从虚拟机出来，经过了哪些路由器才走到腾讯（trace 追踪 + route 路线）。
 - **🔧 硬核解析（底层原理）**：
-    - **现象**：第一跳是 `10.0.2.2`（虚拟机网关），**但第 2 跳之后全是 `* * *`**。
-    - **原因**：不是断网了！是运营商的路由器开了防探测，把包丢了；加上虚拟机现在是 NAT 模式，外面的路由找不到回来的路。在网安里，扫不出别人信息是很正常的。
-    - **缺少组件时**：先执行 `sudo apt install traceroute -y` 安装。
+    - **第一次敲**：直接 `traceroute www.qq.com`，Ubuntu 回「找不到命令 "traceroute"，但可以通过以下软件包安装它」（图 04-4）。新装的系统不带这个工具。
+    - **装完再跑**：`sudo apt install traceroute -y` 之后，第 1 跳是 `10.0.2.2`（NAT 网关），**第 2 跳之后全是 `* * *`**（图 04-6）。
+    - **为什么全是星号**：不是断网。一是运营商路由器大多不回 ICMP 超时的回包，二是虚拟机在 NAT 后面，回来的包找不到路。探测不到，不代表目标不存在。
 - **💬 大白话翻译**：你想弄清快递经过了几个中转站，可中转站不肯报名字，后面几站就只显示 `* * *`。看不到名字，不代表没送到。
 
-**图 04-4**：`traceroute` 失败，第 2 跳之后全是 `* * *`
+**图 04-4**：`traceroute` 没装，提示「找不到命令」
 
 ![traceroute失败](images/04-false_traceroute.png)
 
@@ -117,15 +117,15 @@
 
 ## 8. `systemctl status NetworkManager`：检查网络管理服务状态
 
-- **🎯 总体作用**：查询 systemd 系统和服务管理器中，特定网络服务（这里是 NetworkManager）的运行状态。
+- **🎯 总体作用**：查询 systemd 里某个网络服务的运行状态。这个命令我一开始把服务名敲错了，敲成了 `systemctl status networking`。
 - **🔧 硬核解析（底层原理）**：
-    - **版本差异**：新版 Ubuntu 已把 `networking` 服务改名为 `NetworkManager`，旧命令会直接报错。
-    - **Systemd 体系**：现代 Linux 使用 systemd 作为初始化系统。`NetworkManager.service` 是一个 **Unit（单元）**，负责管理网络接口、连接和路由。
-    - **状态解析**：输出中的 `Active: active (running)` 表示服务处于活动运行状态。`Main PID` 为该守护进程的进程 ID。
-    - **底层日志**：底部展示的是 Journal 日志（如 `device (enp0s3): Activation: successful`），记录了网卡激活、分配 IP、设置默认路由等底层 NetworkManager 操作。
-- **💬 大白话翻译**：你跑到系统后台查岗，问“网络管家（NetworkManager）在不在？”。系统回你：“在呢（active），工号是 658，刚给网卡派了 IP，活干得很漂亮。”
+    - **我敲的和它回我的**：`systemctl status networking` → `Unit networking.service could not be found.`（图 04-13）。不是服务挂了，是这个单元名根本不存在。
+    - **为什么不存在**：`networking` 是旧版 Debian / Ubuntu 用 ifupdown 管网络时的服务名。Ubuntu 22.04 桌面版改用 **NetworkManager**，服务单元叫 `NetworkManager.service`。
+    - **正确的命令**：`systemctl status NetworkManager`。输出里 `Loaded:` 一行给出单元文件路径和是否开机自启；`Active: active (running)` 表示活动运行；`Main PID:` 是主进程号。
+    - **底层日志**：`systemctl status` 末尾会带几行 journal 日志，记录网卡激活、拿到 IP、设置默认路由这些动作。
+- **💬 大白话翻译**：我去后台找「网络管家」，喊的是它以前的旧名字（networking），系统回我「查无此人」。它不是离职了，是改名了——现在叫 NetworkManager，喊新名字才有人应。
 
-**图 04-13**：`systemctl status NetworkManager`
+**图 04-13**：`systemctl status networking` 回 `Unit networking.service could not be found.`
 
 ![systemctl status NetworkManager](images/04-systemctl_ststus_networking.png)
 

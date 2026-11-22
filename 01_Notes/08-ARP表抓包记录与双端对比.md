@@ -13,9 +13,9 @@
 
 ```text
 # 临时修改 DNS 操作
-[你的用户名]@[你的主机名]:~$ echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
+user@user-VirtualBox:~$ echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
 # 验证网络（成功 Ping 通）
-[你的用户名]@[你的主机名]:~$ ping -c 2 baidu.com
+user@user-VirtualBox:~$ ping -c 2 baidu.com
 64 bytes from 111.63.65.247: icmp_seq=1 ttl=52 time=32.9 ms
 
 ```
@@ -36,9 +36,9 @@
 *   **输出结果**：
 
 ```text
-[你的用户名]@[你的主机名]:~$ arp -n
+user@user-VirtualBox:~$ arp -n
 地址                  类型    硬件地址            标志  Mask            接口
-192.168.1.1           ether   [网关MAC已脱敏]     C                enp0s3
+192.168.x.1           ether   [网关MAC已脱敏]     C                enp0s3
 
 ```
 
@@ -50,8 +50,8 @@
 *   **输出结果**：
 
 ```text
-[你的用户名]@[你的主机名]:~$ ip neigh
-192.168.1.1 dev enp0s3 lladdr [网关MAC已脱敏] REACHABLE
+user@user-VirtualBox:~$ ip neigh
+192.168.x.1 dev enp0s3 lladdr [网关MAC已脱敏] REACHABLE
 fe80::... dev enp0s3 lladdr [网关MAC已脱敏] router STALE
 
 ```
@@ -68,16 +68,16 @@ fe80::... dev enp0s3 lladdr [网关MAC已脱敏] router STALE
 *   **输出结果（已脱敏）**：
 
 ```text
-C:\Users\[你的用户名]>arp -a
+C:\Users\user>arp -a
 
 接口: 192.168.x.x --- 0xb
   Internet 地址         物理地址              类型
-  192.168.1.1           [网关MAC已脱敏]       动态
-  192.168.1.255         ff-ff-ff-ff-ff-ff     静态
+  192.168.x.1           [网关MAC已脱敏]       动态
+  192.168.x.255         ff-ff-ff-ff-ff-ff     静态
   224.0.0.22            01-00-5e-00-00-16     静态
   ...
 
-接口: 192.168.56.1 --- 0xc  (VirtualBox 虚拟网卡接口)
+接口: 192.168.56.x --- 0xc  (VirtualBox 虚拟网卡接口)
   Internet 地址         物理地址              类型
   192.168.56.255        ff-ff-ff-ff-ff-ff     静态
   ...
