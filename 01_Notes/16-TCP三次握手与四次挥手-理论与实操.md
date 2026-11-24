@@ -93,7 +93,11 @@ TCP 服务器每收到一次客户端数据，就把保活计时器**重置并�
 
 ## 六、自己抓的一组握手（2026-11-24）
 
-理论看完了，得亲手抓一遍才算。下面三张是我在虚拟机里访问 `https://baidu.com` 时抓到的真实报文，过滤器是 `tcp.flags.syn==1`，抓到之后用 `Follow → TCP Stream` 把同一对连接的完整三行调出来。
+理论看完了，得亲手抓一遍才算。下面三张是我**在虚拟机里**访问 `https://baidu.com` 时抓到的真实报文，过滤器是 `tcp.flags.syn==1`，抓到之后用 `Follow → TCP Stream` 把同一对连接的完整三行调出来。
+
+**抓包环境**：VirtualBox 里的 Ubuntu 22.04，网卡 `enp0s3`（NAT 模式，虚拟机 IP 是 `10.0.2.15`），Wireshark 4.6.9，用 `sudo wireshark` 以管理员权限抓。
+
+> 一个当时的坑：一开始虚拟机走 IPv6 出网，抓到的 SYN 全是黑底重传（对方一次都没回），因为 VirtualBox 的 NAT 只通 IPv4。在 Firefox 里把 `network.dns.disableIPv6` 设成 `true` 之后才抓到正常的握手。
 
 ![三次握手 · 第一个包 SYN](images/16-tcp-syn.png)
 
