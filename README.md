@@ -27,7 +27,7 @@
 
 #### 📱 应用层
 - [12-DNS域名系统理论笔记](01_Notes/12-DNS域名系统理论笔记.md)（附纸质笔记 + 自测默写照片）
-  - （DNS层次结构、域名分类、常见域名名称、域名服务器分类、域名解析过程分类、使用UDP53端口；篇末附 2026-11-24 闭卷默写 A / AAAA / CNAME 的手写稿与转录）
+  - （DNS层次结构、域名分类、常见域名名称、域名服务器分类、域名解析过程分类、使用UDP53端口；**响应码 RCODE（0/2/3/5）与抓包位置**；篇末附 2026-11-24 闭卷默写 A / AAAA / CNAME 的手写稿与转录）
 - [13-Wireshark双端DNS抓包实操](01_Notes/13-Wireshark双端DNS抓包实操.md)
   - （Wireshark 抓包与过滤器语法；DNS 报文逐字段解析：Transaction ID 配对、Flags/QR/RCODE 判读、Answer 区 CNAME 别名链与 A 记录、TTL 设计、Authority/Additional(OPT) 区；含「加密 DNS 导致明文抓不到」的完整排查与防守视角分析）
 - [14-应用层WWW与HTTP理论笔记](01_Notes/14-应用层WWW与HTTP理论笔记.md)（附纸质笔记）
