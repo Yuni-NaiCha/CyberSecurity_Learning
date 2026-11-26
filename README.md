@@ -32,6 +32,8 @@
   - （Wireshark 抓包与过滤器语法；DNS 报文逐字段解析：Transaction ID 配对、Flags/QR/RCODE 判读、Answer 区 CNAME 别名链与 A 记录、TTL 设计、Authority/Additional(OPT) 区；含「加密 DNS 导致明文抓不到」的完整排查与防守视角分析）
 - [14-应用层WWW与HTTP理论笔记](01_Notes/14-应用层WWW与HTTP理论笔记.md)（附纸质笔记）
   - （应用层概述、网络应用的两种方式、万维网WWW、超文本传输协议HTTP与报文收发解读、Cookie、Web缓存与代理服务器）
+- [21-HTTP请求结构抄录](01_Notes/21-HTTP请求结构抄录.md)
+  - （实抓 https://www.baidu.com/ 的首个请求：请求行 URL/GET/200、Remote Address 36.152.44.93:443；16 条请求头（Host、User-Agent、Accept、Accept-Encoding、Cookie、Sec-Fetch-* 等）；9 条响应头（Content-Type、Content-Encoding gzip、Server BWS/1.1、Set-Cookie 两条等）；响应体前 10 行；五个发现：Host 区分站点、压缩协商、Cookie 来回、keep-alive、Sec-Fetch 安全头）
 
 #### 🚚 运输层
 - [16-TCP三次握手与四次挥手-理论与实操](01_Notes/16-TCP三次握手与四次挥手-理论与实操.md)（附纸质笔记 · 手写状态机图 + 虚拟机里实抓的三张握手截图）
@@ -42,6 +44,7 @@
   - （流量控制：滑动窗口、零窗口探测、糊涂窗口综合症；拥塞控制：cwnd / ssthresh / 慢开始指数增长与拥塞避免的加法增大、超时后的乘法减小；快重传与快恢复：3 个连续重复 ACK 触发、cwnd = ssthresh + 3；超时重传时间 RTO：加权平均 RTTs 与偏差 RTTd、Karn 算法（重传不采样 + 指数退避）；手写稿分别贴在对应小节）
 - [20-运输层：端口复用分用与TCP可靠传输实现](01_Notes/20-运输层：端口复用分用与TCP可靠传输实现.md)（附纸质笔记 · 五页手写稿）
   - （运输层的端到端与逻辑通信信道；端口号三段划分 0—1023 / 1024—49151 / 49152—65535；复用与分用、四元组；10 个常用协议的熟知端口与 IP 协议字段 6/17；TCP 以字节为单位的滑动窗口、后沿/前沿移动规则、按序交付、累计确认与捎带确认、0.5 秒推迟确认、全双工）
+
 #### 🗺️ 网络层
 - [03-IP与MAC地址与ARP协议](01_Notes/03-IP与MAC地址与ARP协议.md)（附纸质笔记）
   - （IP地址，MAC地址，ARP地址解析协议理论与手写图解；跨层：MAC 属链路层）
