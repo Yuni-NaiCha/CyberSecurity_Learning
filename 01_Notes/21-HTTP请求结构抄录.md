@@ -17,6 +17,8 @@
 
 💬 一行请求 = 方法 + 路径 + 版本；这里是 `GET / HTTP/1.1`（HTTPS 下 F12 不直接显示版本，但默认 HTTP/1.1 或 HTTP/2）。
 
+![实抓：常规信息 + 响应标头](images/21-shot-resp-headers.png)
+
 ---
 
 ## 二、请求标头（浏览器 → 服务器）
@@ -41,6 +43,8 @@
 | `Cookie` | `BIDUPSID=…; PSTM=…; BAIDUID=…; BD_HOME=1; H_PS_PSSID=…` | **上次服务器给我的身份，这次带回来** |
 
 💬 记法：请求头分三类——**我是谁**（Host / User-Agent）、**我要什么**（Accept / Accept-Language / Cache-Control）、**带什么凭证**（Cookie）。
+
+![实抓：请求标头（Host / User-Agent / Sec-*）](images/21-shot-req-headers.png)
 
 ---
 
@@ -84,6 +88,8 @@
 - `<meta charset>` 决定中文不乱码（对不上就变乱码）
 - `<title>百度一下，你就知道</title>` 是标签页上那行字
 - `<!--STATUS OK-->` 是百度自己的注释（传统，不是标准）
+
+![实抓：响应体前几行 HTML](images/21-shot-body.png)
 
 ---
 

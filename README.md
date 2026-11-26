@@ -32,7 +32,7 @@
   - （Wireshark 抓包与过滤器语法；DNS 报文逐字段解析：Transaction ID 配对、Flags/QR/RCODE 判读、Answer 区 CNAME 别名链与 A 记录、TTL 设计、Authority/Additional(OPT) 区；含「加密 DNS 导致明文抓不到」的完整排查与防守视角分析）
 - [14-应用层WWW与HTTP理论笔记](01_Notes/14-应用层WWW与HTTP理论笔记.md)（附纸质笔记）
   - （应用层概述、网络应用的两种方式、万维网WWW、超文本传输协议HTTP与报文收发解读、Cookie、Web缓存与代理服务器）
-- [21-HTTP请求结构抄录](01_Notes/21-HTTP请求结构抄录.md)
+- [21-HTTP请求结构抄录](01_Notes/21-HTTP请求结构抄录.md)（附实抓截图 ×3）
   - （实抓 https://www.baidu.com/ 的首个请求：请求行 URL/GET/200、Remote Address 36.152.44.93:443；16 条请求头（Host、User-Agent、Accept、Accept-Encoding、Cookie、Sec-Fetch-* 等）；9 条响应头（Content-Type、Content-Encoding gzip、Server BWS/1.1、Set-Cookie 两条等）；响应体前 10 行；五个发现：Host 区分站点、压缩协商、Cookie 来回、keep-alive、Sec-Fetch 安全头）
 
 #### 🚚 运输层
