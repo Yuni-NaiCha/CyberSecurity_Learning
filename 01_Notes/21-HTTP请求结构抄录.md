@@ -125,4 +125,4 @@
 
 - 一次 HTTP 请求由请求行、请求头、空行、请求体组成；响应由状态行、响应头、空行、响应体组成。
 - 一个 IP 挂多个站，靠 `Host` 区分；压缩靠 `Accept-Encoding` 与 `Content-Encoding` 协商；Cookie 由 `Set-Cookie` 下发、下次请求带回。
-- 抓取时间：2026-11-26；设备：Windows 10 + Edge 158。
+- 抓取环境：Windows 10 + Edge 158。
