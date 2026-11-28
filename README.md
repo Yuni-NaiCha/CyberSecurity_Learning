@@ -37,6 +37,7 @@
   - （实抓 https://www.baidu.com/ 的首个请求：请求行 URL/GET/200、Remote Address 36.152.44.93:443；16 条请求头（Host、User-Agent、Accept、Accept-Encoding、Cookie、Sec-Fetch-* 等）；9 条响应头（Content-Type、Content-Encoding gzip、Server BWS/1.1、Set-Cookie 两条等）；响应体前 10 行；五个发现：Host 区分站点、压缩协商、Cookie 来回、keep-alive、Sec-Fetch 安全头）
 - [23-http 登录表单明文抓包标注](01_Notes/23-http登录表单明文抓包标注.md)（附实抓截图 · 用 `http` 过滤器抓 `POST /login`，展开 `HTML Form URL Encoded` 看到 `username=test`、`password=123456`；含编码规则与 http/https 对比）
 - [24-一次网页访问的抓包分析报告](01_Notes/24-一次网页访问的抓包分析报告.md)（附纸质笔记 · 手写默写与串链表；DNS → TCP → HTTP 一条链 + 三周抓包截图）
+- [25-HTTP 状态码对照表](01_Notes/25-HTTP状态码对照表.md)（8 个必会码 + 401/403、301/302、304/404 三对易混 + 工作与安全场景）
 
 #### 🚚 运输层
 - [16-TCP三次握手与四次挥手-理论与实操](01_Notes/16-TCP三次握手与四次挥手-理论与实操.md)（附纸质笔记 · 手写状态机图 + 虚拟机里实抓的三张握手截图）
