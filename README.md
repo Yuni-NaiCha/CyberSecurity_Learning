@@ -34,8 +34,8 @@
   - （应用层概述、网络应用的两种方式、万维网WWW、超文本传输协议HTTP与报文收发解读、Cookie、Web缓存与代理服务器）
 - [21-HTTP请求结构抄录](01_Notes/21-HTTP请求结构抄录.md)（附实抓截图 ×3）
 - [22-IPv4数据报首部格式](01_Notes/22-IPv4数据报首部格式.md)（附纸质笔记 · IPv4 首部手写表；含 4000 字节分片计算示例）
-- [23-http 登录表单明文抓包标注](01_Notes/23-http登录表单明文抓包标注.md)（附实抓截图 · 用 `http` 过滤器抓 `POST /login`，展开 `HTML Form URL Encoded` 看到 `username=test`、`password=123456`；含编码规则与 http/https 对比）
   - （实抓 https://www.baidu.com/ 的首个请求：请求行 URL/GET/200、Remote Address 36.152.44.93:443；16 条请求头（Host、User-Agent、Accept、Accept-Encoding、Cookie、Sec-Fetch-* 等）；9 条响应头（Content-Type、Content-Encoding gzip、Server BWS/1.1、Set-Cookie 两条等）；响应体前 10 行；五个发现：Host 区分站点、压缩协商、Cookie 来回、keep-alive、Sec-Fetch 安全头）
+- [23-http 登录表单明文抓包标注](01_Notes/23-http登录表单明文抓包标注.md)（附实抓截图 · 用 `http` 过滤器抓 `POST /login`，展开 `HTML Form URL Encoded` 看到 `username=test`、`password=123456`；含编码规则与 http/https 对比）
 
 #### 🚚 运输层
 - [16-TCP三次握手与四次挥手-理论与实操](01_Notes/16-TCP三次握手与四次挥手-理论与实操.md)（附纸质笔记 · 手写状态机图 + 虚拟机里实抓的三张握手截图）
@@ -55,6 +55,7 @@
 - [11-IPv4地址练习题](01_Notes/11-IPv4地址练习题.md)（附纸质笔记）
   - （CIDR地址块全信息计算、子网划分实战练习、路由聚合推导、块大小法计算）
 - [15-IPv4手算子网练习](01_Notes/15-IPv4手算子网练习.md)（附纸质笔记 · 手写答题纸）
+- [22-IPv4数据报首部格式](01_Notes/22-IPv4数据报首部格式.md)（附纸质笔记 · IPv4 首部手写表；含 4000 字节分片计算示例）
   - （完全纸笔、不用计算器的十道题：地址分类与默认掩码、/24 等分、/20 与 /11 大网段、同网段判断、可用主机数、路由聚合、VLSM 分配；含错题复盘与三条失分规律的自查）
 
 #### 🔌 网络接口层（数据链路层 + 物理层）
