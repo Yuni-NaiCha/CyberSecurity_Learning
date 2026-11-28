@@ -34,6 +34,7 @@
   - （应用层概述、网络应用的两种方式、万维网WWW、超文本传输协议HTTP与报文收发解读、Cookie、Web缓存与代理服务器）
 - [21-HTTP请求结构抄录](01_Notes/21-HTTP请求结构抄录.md)（附实抓截图 ×3）
 - [22-IPv4数据报首部格式](01_Notes/22-IPv4数据报首部格式.md)（附纸质笔记 · IPv4 首部手写表；含 4000 字节分片计算示例）
+- [23-登录抓包标注](01_Notes/23-登录抓包标注.md)（附实抓截图 · http 表单明文，Wireshark 展开 Form 字段）
   - （实抓 https://www.baidu.com/ 的首个请求：请求行 URL/GET/200、Remote Address 36.152.44.93:443；16 条请求头（Host、User-Agent、Accept、Accept-Encoding、Cookie、Sec-Fetch-* 等）；9 条响应头（Content-Type、Content-Encoding gzip、Server BWS/1.1、Set-Cookie 两条等）；响应体前 10 行；五个发现：Host 区分站点、压缩协商、Cookie 来回、keep-alive、Sec-Fetch 安全头）
 
 #### 🚚 运输层
